@@ -1,3 +1,31 @@
-<h1>MJC PORTFOLIO</h1>
 
-<router-outlet />
+<body>
+    <div class="main-page">
+        <div class="main-content">
+            <nav class="nav nav-header">
+                <div class="main-logos">
+                    <a class="logo1">
+                        <span class="portfolio">MJC-Portfolio</span>
+                    </a>
+                    <a class="logo">
+                        <img src="./assets/Icons/github-icon-color.svg" style="width: 25px;" alt="">
+                    </a>
+                    <a class="logo">
+                        <img src="./assets/Icons/linkedin-icon-2.svg" style="width: 25px;" alt="">
+                    </a>
+                </div>
+                <button class="dropdown-toggle" (click)="toggleDropdown()">☰</button>
+                <div class="content-items" [class.show]="dropdownOpen">
+                    <a (click)="navigateTo('mainall')" class="nav-link" [ngClass]="{'active': activeTab === 'mainall'}">Home</a>
+                    <a (click)="navigateTo('experience')" class="nav-link" [ngClass]="{'active': activeTab === 'experience'}">Experience</a>
+                    <a (click)="navigateTo('projects')" class="nav-link" [ngClass]="{'active': activeTab === 'projects'}">Projects</a>
+                    <a (click)="navigateTo('resume')" class="nav-link" [ngClass]="{'active': activeTab === 'resume'}">Resume</a>
+                    <a (click)="navigateTo('skills')" class="nav-link" [ngClass]="{'active': activeTab === 'skills'}">Skills</a>
+                </div>
+            </nav>
+        </div>
+
+        <app-main-all [activeTab]="activeTab"></app-main-all>
+        <router-outlet />
+   </div>
+</body>
