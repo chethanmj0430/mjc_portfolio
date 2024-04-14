@@ -1,6 +1,30 @@
-<div *ngIf="activeTab === 'mainall'">
-    <p>main-all works!</p>
+<div *ngIf="activeTab === 'home'">
+    <div class="main-page">
+        <div class="page-contents">
+            <h1>
+                Chethan M J
+            </h1>
+            <p  class="intro">
+                Software engineer with over 2.6 years of <br>
+                experience in Angular, skilled in<br>
+                building user-friendly, large-scale,<br>
+                and responsive frontend applications. 
+                Also worked on python and technologies like Node Red for automation.
+
+            </p>
+        </div>
+        <div class="carousel">
+            <div class="slides">
+                <img *ngFor="let slide of slides; let i = index" [src]="slide.url" [alt]="slide.alt" [style.display]="i === slideIndex ? 'block' : 'none'" [style.width]="'100%'">
+            </div>
+            <a class="prev" (click)="changeSlide(-1)">&#10094;</a>
+            <a class="next" (click)="changeSlide(1)">&#10095;</a>
+        </div>
+        
+    </div>
 </div>
+        
+        
 
 <div *ngIf="activeTab === 'experience'">
     <p>experienc works!</p>
@@ -17,3 +41,4 @@
 <div *ngIf="activeTab === 'skills'">
     <p>skills works!</p>
 </div>
+

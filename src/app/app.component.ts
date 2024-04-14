@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AppComponent {
   title = 'mjc_portfolio'; 
 
-  activeTab: string = '';
+  activeTab: string = 'home';
   public dropdownOpen = false;
 
   constructor(
