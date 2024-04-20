@@ -5,7 +5,7 @@
                 Chethan M J
             </h1>
             <p  class="intro">
-                Software engineer with over 2.6 years of <br>
+                Software engineer with around 3 years of <br>
                 experience in Angular, skilled in<br>
                 building user-friendly, large-scale,<br>
                 and responsive frontend applications. 
@@ -27,18 +27,292 @@
         
 
 <div *ngIf="activeTab === 'experience'">
-    <p>experienc works!</p>
+    <div class="exp-page">
+        <div class="content-exp">
+            <h2> Professional Experience</h2>
+            <div class="exp-1">
+                <h2 (click)="toggleVisibility(1)">Software Engineer</h2>
+                <h3 (click)="toggleVisibility(1)">PRODAPT SOLUTIONS - Bangalore, India</h3>
+                <div class="exp-1-content" (click)="toggleVisibility(1)">
+                    <p>
+                        Software engineer with three years of corporate experience in front-end and UI/Web development,
+                        specializing in Angular. I excel in the full lifecycle of complex web application development.
+                        Skilled in designing, analysis, and maintenance, I create intuitive, responsive interfaces.
+                        My technical proficiency extends to Python and automation technologies like Robot framework and Node-RED,
+                        allowing me to innovate and enhance user experiences effectively.
+                        Adept at problem-solving, I am committed to contributing to dynamic development teams with my skills.
+                    </p>
+                </div>
+                <div *ngIf="experience1">
+                    <h4>Front End - Angular Developer</h4>
+                    <h5>Description</h5>
+                    <p>
+                        Netbots an automation tool application used by Telcom companies to automate the any devices.
+                        The business objective is to automate the transfer process without exposing the underlying complexities of any devices using bots.
+                        
+                        Core Principles of Netbots is to Validate the device information and its complexity, minimize time spent on user input, 
+                        validations on key information, ability to interface with the policy systems, reports generation using AHK and Elastic logs using Dashboards,
+                        User credential management by team to validate the different type of users for security.
+                    </p>
+                    <h5>Responsibilities</h5>
+                    <ul>
+                        <li>Developed highly interactive web applications utilizing TypeScript, HTML5, CSS, JSON, Angular 2,
+                            and Material-UI and integrating Restful API's.</li>
+                        <li>Involved in designing the user experience interface UI/UX strategy,
+                            UI requirements, converting findings into UI designs</li>
+                        <li>Leveraged MVC design pattern to organize Angular controllers, Custom directives, factories and views.
+                            Worked on the REST/Web API to create the services and tested on postman
+                        </li>
+                        <li>
+                            Implemented comprehensive unit and E2E testing, achieving a 90% pass rate on all delivered features.
+                        </li>
+                        <li>
+                            Collaborated cross-functionally with UX designers and backend developers to streamline the AHK logs 
+                            and elastic logs creation process to view in dashboards.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="exp-2">
+                <h2 (click)="toggleVisibility(2)"> Associate Software Engineer</h2>
+                <h3 (click)="toggleVisibility(2)">PRODAPT SOLUTIONS - Bangalore, India</h3>
+                <div class="exp-2-content" (click)="toggleVisibility(2)">
+                    <p>
+                        Associate Software engineer with over 2 years of experience in Angular, skilled in building user-friendly, large-scale, and
+                        responsive frontend applications. Also worked on python and technologies like Node Red for automation.
+                    </p>
+                </div>
+                <div *ngIf="experience2">
+                    <h4>Front End - Angular Developer</h4>
+                    <ul>
+                        <li>
+                            Researched, documented, and built POCs for various purpose of user management services like ,
+                            Auth0 and Keycloak for Prodapt's Netbots platform used for automation of IP devices and Vlans
+                        </li>
+                        <li>
+                            Implemented, and documented vital aspects of the frontend codebase such as folder structure,
+                            TypeScript setup, design system components, Role-Based Access Control,
+                            Business logic Implementation for particular automation, login, and signup flow using LDAP
+                        </li>
+                        <li>
+                            Integrated REST APIs with Basic AUTH and also a part of building and designing of the
+                            dashboard displaying web page in AHK and Elastic logs
+                        </li>
+                        <li>
+                            Created and worked on flow based automation that connects various device to automate by 
+                            creating different nodes using visual programming languages used like JavaScript and python
+                        </li>
+                        <li>
+                            Have completed ServiceNow Course CSA, ITSM and Micro certification
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
 </div>
 
 <div *ngIf="activeTab === 'projects'">
-    <p>projects works!</p>
+    <div class="proj-page">
+        <div class="project_items">
+            <div class="proj-1">
+                <h1> Projects</h1>
+                <h3 (click)="toggleVisibility(3)">YouTube clone</h3>
+                <p  (click)="toggleVisibility(3)">
+                    Developed a fully functional clone of YouTube, designed to manage user-generated video content. <br>
+                    The application allows users to upload, view, and manage videos, similar to the original YouTube platform.<br>
+                    It includes features such as creating and managing user accounts, video uploads, streaming, commenting, liking, and subscribing to channels.
+                </p>
+                <div *ngIf ="project1" class="proj-1-description">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>
+                            Frontend: Angular
+                        </li>
+                        <li>
+                            Backend: Spring Boot, Java
+                        </li>
+                        <li>
+                            Database: MariaDB
+                        </li>
+                        <li>
+                            Others: HTML5, CSS3, TypeScript, REST API, JWT for authentication
+                        </li>
+                    </ul>
+                    <h4>Description and Features</h4>
+                    <ul>
+                        <li>
+                            Led the design and implementation of the frontend using Angular, creating a dynamic and user-friendly interface.
+                        </li>
+                        <li>
+                            Developed RESTful services with Spring Boot to handle all backend functionalities, including user management, video storage, and interaction services.
+                        </li>
+                        <li>
+                            Collaborated with a team to design the database schema and managed the database interactions using MariaDB.
+                        </li>
+                        <li>
+                            I enhanced security by implementing robust server-side validation and JWT, optimized Spring Boot and MariaDB for load management, and developed a search engine for efficient content retrieval.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="proj-2">
+                <h3 (click)="toggleVisibility(4)">Speech Emotion Recognition</h3>
+                <p  (click)="toggleVisibility(4)">
+                    Developed a machine learning model to recognize and classify emotions from speech using convolutional neural networks (CNNs). <br>
+                    The system analyzes audio inputs to identify emotional states,and recognise the emotion based on parsed data and interactive AI.
+                </p>
+                <div *ngIf ="project2" class="proj-2-description">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>
+                            Languages and Libraries: Python, TensorFlow, Keras
+                        </li>
+                        <li>
+                            Feature Extraction Technique: Mel Frequency Cepstral Coefficients (MFCC)
+                        </li>
+                        <li>
+                            Machine Learning Algorithm: Convolutional Neural Network (CNN)
+                        </li>
+                        <li>
+                            Data Handling: NumPy, Pandas
+                        </li>
+                    </ul>
+                    <h4>Description and Features</h4>
+                    <ul>
+                        <li>
+                            Utilized Python and popular machine learning libraries such as TensorFlow and Keras for model development.
+                        </li>
+                        <li>
+                            Engineered features from raw audio data using techniques like Mel Frequency Cepstral Coefficients (MFCCs).
+                        </li>
+                        <li>
+                            Trained a CNN model to classify multiple emotions with high accuracy by using a dataset comprised of annotated emotional speech.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="proj-3">
+                <h3 (click)="toggleVisibility(5)">Portfolio Website for Kishu Muscle Garage</h3>
+                <p  (click)="toggleVisibility(5)">
+                    Designed and developed a dynamic portfolio website for Kishu Muscle Garage, a gym specializing in personalized fitness regimes. <br>
+                    The website showcases various fitness programs and trainer profiles, enabling users to explore services and contact the gym directly. <br>
+                    Utilizing Angular for front-end development ensured a responsive and engaging user interface,<br>
+                    while Material UI provided a suite of ready-to-use components that enhanced the aesthetic and functional aspects of the site.
+                </p>
+                <div *ngIf ="project3" class="proj-3-description">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>
+                            Frontend Framework: Angular
+                        </li>
+                        <li>
+                            UI Toolkit: Material UI
+                        </li>
+                        <li>
+                            Others: TypeScript, HTML, CSS5
+                        </li>
+                    </ul>
+                    <h4>Description and Features</h4>
+                    <ul>
+                        <li>
+                            This combination of technologies helped create a seamless, user-friendly experience that adapts to different device formats, <br>
+                            ensuring that potential clients receive the best interaction, regardless of how they access the site.
+                        </li>
+                        <li>
+                            Developed the entire portfolio website using the Angular framework, leveraging its powerful features for creating <br>
+                            dynamic and responsive web applications
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <div *ngIf="activeTab === 'resume'">
-    <p>resume works!</p>
+    
+    <div class="pdf-container">
+        <pdf-viewer [src]="pdfSrc"
+                    [original-size]="true"
+                    [show-all]="true"
+                    [autoresize]="true"
+                    [fit-to-page]="true"
+                    [zoom]="1"></pdf-viewer>
+        <img src="./assets/Icons/downlaod.png" class="overlay-icon" alt="resume1" (click)="downloadPdf()">
+    </div>
 </div>
 
 <div *ngIf="activeTab === 'skills'">
-    <p>skills works!</p>
+    
+    <div class="skill-page">
+        
+        <div class="skills-item">
+            <div class="skill-1">
+            <h2>Skills</h2>
+                <h3> Programming Languages</h3>
+                <ul>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <h3> Frameworks and Others</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Angular JS</li>
+                    <li>Node.js</li>
+                    <li>MySQL</li>
+                    <li>Material UI</li>
+                </ul>
+                <h3>Miscellaneous</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Jira</li>
+                    <li>Agile</li>
+                    <li>Scrum</li>
+                    <li>Waterfall</li>
+                    <li>SAFe</li>
+                    <li>Testing frameworks (Jasmine, Karma, Protractor)</li>
+                </ul>
+            </div>
+            <div class="skill-2">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving and Critical Thinking</li>
+                    <li>Adaptability and Flexibility</li>
+                    <li>Collaboration and Cross-Functional Coordination</li>
+                    <li>Active Learning and Continuous Improvement</li>
+                    <li>Empathy and Customer-Centric Mindset</li>
+                    <li>Teamwork and Interpersonal Skills</li>
+                    <li>Attention to User Experience and Design</li>
+                </ul>
+                <h3>IDE & Tools</h3>
+                <ul>
+                    <li>VS Code</li>
+                    <li>IntellIJ</li>
+                    <li>Spring boot</li>
+                    <li>Webstorm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="float-icons">
+            <img src="./assets/Icons/angular.svg" alt="Description" width="450">
+            <img src="./assets/Icons/css-color.svg" alt="Description" width="300">
+            <img src="./assets/Icons/html-color.svg" alt="Description" width="300">
+            <img src="./assets/Icons/javascript-color.svg" alt="Description" width="300">
+            <img src="./assets/Icons/typescript-color.svg" alt="Description" width="300">
+            <img src="./assets/Icons/nodejs.svg" alt="Description" width="300">
+        </div>
+        
+    </div>
 </div>
 

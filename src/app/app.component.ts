@@ -24,8 +24,8 @@ export class AppComponent {
 
   navigateTo(page: string): void {
     this.activeTab = page;
-    this.dropdownOpen = false; // Ensure dropdown is closed after clicking
-    this.router.navigateByUrl(`/${page}`); // Adjust as per your routing paths
+    this.dropdownOpen = false;
+    this.router.navigateByUrl(`/${page}`);
   }
 }
 

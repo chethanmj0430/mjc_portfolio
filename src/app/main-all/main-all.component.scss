@@ -79,3 +79,212 @@ a.prev, a.next {
     width: 100%;
 }
 
+/* Base styles for the experience page */
+.exp-page {
+    display: flex;
+    background-color: #1C5789;
+    height: 100%;
+    color: #CAD4DF;
+    flex-direction: row;  
+    align-items: center;     
+    justify-content: center;   
+    padding: 20px; 
+}
+
+.exp-1 h2, .exp-1 h3, .exp-1-content p,
+.exp-2 h2, .exp-2 h3, .exp-2-content p {
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .exp-page {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content-exp h2, .content-exp h3 {
+        text-align: center;
+    }
+
+    .exp-1-content p, .exp-2-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-exp {
+        width: 100%;
+    }
+
+    .exp-1-content p, .exp-2-content p {
+        font-size: 13px;
+    }
+
+    .exp-1 h2, .exp-1 h3, .exp-2 h2, .exp-2 h3 {
+        font-size: 16px;
+    }
+}
+
+
+.proj-page {
+    display: flex;
+    background-color: #1C5789;
+    height: 100%;
+    color: #CAD4DF;
+    flex-direction: row;  
+    align-items: center;     
+    justify-content: center;   
+    padding: 20px; 
+}
+
+.proj-1 h2, .proj-1 h3, .proj-1 p,
+.proj-2 h2, .proj-2 h3, .proj-2 p ,
+.proj-3 h2, .proj-3 h3, .proj-3 p {
+    cursor: pointer;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .proj-page {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px;
+    }
+}
+
+/* Media Query for Desktops */
+@media (min-width: 1024px) {
+    .proj-page {
+        justify-content: space-between;
+        padding: 60px;
+    }
+}
+
+.resume-page {
+    height: 500px;
+    width: 100%;
+}
+
+pdf-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.pdf-container pdf-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 30px;
+    z-index: 10;
+}
+
+
+@media (max-width: 480px) { 
+    .pdf-container {
+        height: auto; 
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    
+    .pdf-container {
+        padding-top: 50px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pdf-container {
+        height: 100vh;
+    }
+}
+
+
+.skill-page {
+    display: flex;
+    background-color: #1C5789;
+    color: #CAD4DF;
+    flex-direction: column;  
+    align-items: start;     
+    justify-content: center;   
+    padding: 20px;
+    height: auto;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.skill-1, .skill-2 {
+    width: 48%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .skill-page, .skills-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-1, .skill-2 {
+        width: 100%; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+.float-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px;
+}
+
+.float-icons img {
+    width: 150px;
+    opacity: 0;
+    animation: floatUp 9s ease-out infinite;
+    animation-delay: calc(var(--img-index) * 0.3s);
+    --img-index: 0;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.toggle-button {
+    z-index: 1050;
+}
+
+  
